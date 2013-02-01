@@ -35,7 +35,7 @@ exports.handlers = {
     // The doclet is a provided global method, if the doclet was provided by
     // goog.provide and its kind is function.
     if (providedMap[longname = doclet.longname]) {
-      if (doclet.kind === "function") {
+      if (doclet.kind === 'function') {
         globalMethodMap[longname] = true;
       }
     }
@@ -70,7 +70,7 @@ exports.nodeVisitor = {
         e.comment = '@namespace ' + longname + '\n';
         e.lineno = node.getLineno();
         e.filename = currentSourceName;
-        e.event = "jsdocCommentFound";   
+        e.event = 'jsdocCommentFound';   
       }
     }
   }
